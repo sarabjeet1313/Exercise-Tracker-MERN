@@ -20,10 +20,6 @@ connection.once("open", () => {
   console.log("Connected to Mongo Db Atlas cloud database");
 });
 
-app.get("/", (req, res) => {
-  res.send("Welcome to Exercise Tracker ");
-});
-
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log("Server is listening on  " + `${port}`);
